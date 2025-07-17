@@ -270,3 +270,46 @@ To https://github.com/emmanuel-niyonsaba/Gym-Git-Exercise-Solutions.git
 
 user@EmmauelNiyonsaba MINGW64 /d/CodingRelated/Gym-Git-Exercise-Solutions (dev)
 $
+``
+##Bundle 2 
+## Exercises 1
+```bash
+
+user@EmmauelNiyonsaba MINGW64 /d/CodingRelated/Gym-Git-Exercise-Solutions (dev)
+$ git checkout -b ft/bundle-2
+
+user@EmmauelNiyonsaba MINGW64 /d/CodingRelated/Gym-Git-Exercise-Solutions (ft/bundle-2)
+$ git add .
+
+user@EmmauelNiyonsaba MINGW64 /d/CodingRelated/Gym-Git-Exercise-Solutions (ft/bundle-2)
+$ git commit -m"add: services.html"
+[ft/bundle-2 232dc3f] add: services.html
+ 1 file changed, 11 insertions(+)
+ create mode 100644 services.html
+
+user@EmmauelNiyonsaba MINGW64 /d/CodingRelated/Gym-Git-Exercise-Solutions (ft/bundle-2)
+$ git push
+fatal: The current branch ft/bundle-2 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/bundle-2
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.  
+
+
+user@EmmauelNiyonsaba MINGW64 /d/CodingRelated/Gym-Git-Exercise-Solutions (ft/bundle-2)
+$  git push --set-upstream origin ft/bundle-2
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+ object.
+remote:
+remote: Create a pull request for 'ft/bundle-2' on GitHub by visiting:
+remote:      https://github.com/emmanuel-niyonsaba/Gym-Git-Exercise-Solutions/pull/new/ft/bundle-2
+remote:
+To https://github.com/emmanuel-niyonsaba/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/bundle-2 -> ft/bundle-2
+branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.
+
+user@EmmauelNiyonsaba MINGW64 /d/CodingRelated/Gym-Git-Exercise-Solutions (ft/bundle-2)
+$
