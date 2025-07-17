@@ -1,8 +1,8 @@
 # Gym-Git-Exercise-Solutions
 
-```
-#Bundle 1 
-## Exercises 2
+``
+## Bundle 1 
+### Exercises 2
 ```bash
 ngRelated/Gym-Git-Exercise-Solutions (dev)
 $ git stash
