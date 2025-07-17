@@ -270,8 +270,9 @@ To https://github.com/emmanuel-niyonsaba/Gym-Git-Exercise-Solutions.git
 
 user@EmmauelNiyonsaba MINGW64 /d/CodingRelated/Gym-Git-Exercise-Solutions (dev)
 $
-``
-##Bundle 2 
+
+```
+## Bundle 2 
 ## Exercises 1
 ```bash
 
