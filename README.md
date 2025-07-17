@@ -370,3 +370,191 @@ On branch main
 Your branch is up to date with 'origin/main'.
 
 nothing to commit, working tree clean
+```
+## Bundle 3
+# Exercises 1
+```bash
+
+user@EmmauelNiyonsaba MINGW64 /d/CodingRelated/Gym-Git-Exercise-Solutions (main)
+$ git checkout -b ft/team-page
+Switched to a new branch 'ft/team-page'
+
+user@EmmauelNiyonsaba MINGW64 /d/CodingRelated/Gym-Git-Exercise-Solutions (ft/team-page)
+$ git add .
+
+user@EmmauelNiyonsaba MINGW64 /d/CodingRelated/Gym-Git-Exercise-Solutions (ft/team-page)
+$ git commit -m"add: team2"
+[ft/team-page b7d16bc] add: team2
+ 1 file changed, 11 insertions(+)
+ create mode 100644 team2.html
+
+user@EmmauelNiyonsaba MINGW64 /d/CodingRelated/Gym-Git-Exercise-Solutions (ft/team-page)
+$ git push
+fatal: The current branch ft/team-page has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/team-page
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+user@EmmauelNiyonsaba MINGW64 /d/CodingRelated/Gym-Git-Exercise-Solutions (ft/team-page)
+$  git push --set-upstream origin ft/team-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 435 bytes | 435.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/team-page' on GitHub by visiting:
+remote:      https://github.com/emmanuel-niyonsaba/Gym-Git-Exercise-Solutions/pull/new/ft/team-page
+remote:
+To https://github.com/emmanuel-niyonsaba/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/team-page -> ft/team-page
+branch 'ft/team-page' set up to track 'origin/ft/team-page'.
+
+user@EmmauelNiyonsaba MINGW64 /d/CodingRelated/Gym-Git-Exercise-Solutions (ft/team-page)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+user@EmmauelNiyonsaba MINGW64 /d/CodingRelated/Gym-Git-Exercise-Solutions (main)
+$ git checkout -b ft/contact-page
+Switched to a new branch 'ft/contact-page'
+
+user@EmmauelNiyonsaba MINGW64 /d/CodingRelated/Gym-Git-Exercise-Solutions (ft/contact-page)
+$ git checkout ft/team-page 
+Switched to branch 'ft/team-page'
+Your branch is up to date with 'origin/ft/team-page'.
+
+user@EmmauelNiyonsaba MINGW64 /d/CodingRelated/Gym-Git-Exercise-Solutions (ft/team-page)
+$ git log -1
+commit b7d16bca1611b00af6cda3ef08fd0ff44610a2a2 (HEAD -> ft/team-page, origin/ft/team-page)
+Author: Emmanuel Niyonsaba <emmanuelniyonsaba40@gmail.com>
+Date:   Fri Jul 18 00:22:41 2025 +0200
+
+    add: team2
+
+user@EmmauelNiyonsaba MINGW64 /d/CodingRelated/Gym-Git-Exercise-Solutions (ft/team-page)
+$ git checkout ft/contact-page 
+Switched to branch 'ft/contact-page'
+
+user@EmmauelNiyonsaba MINGW64 /d/CodingRelated/Gym-Git-Exercise-Solutions (ft/contact-page)
+$ git cherry-pick b7d16bca1611b00af6cda3ef08fd0ff44610a2a2
+[ft/contact-page 1ab0e64] add: team2
+ Date: Fri Jul 18 00:22:41 2025 +0200
+ 1 file changed, 11 insertions(+)
+ create mode 100644 team2.html
+
+user@EmmauelNiyonsaba MINGW64 /d/CodingRelated/Gym-Git-Exercise-Solutions (ft/contact-page)
+$ git add .
+
+user@EmmauelNiyonsaba MINGW64 /d/CodingRelated/Gym-Git-Exercise-Solutions (ft/contact-page)
+$ git commit -m"add:conatct"
+[ft/contact-page c18b616] add:conatct
+ 1 file changed, 1 insertion(+)
+
+user@EmmauelNiyonsaba MINGW64 /d/CodingRelated/Gym-Git-Exercise-Solutions (ft/contact-page)
+$ git push
+fatal: The current branch ft/contact-page has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/contact-page
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+user@EmmauelNiyonsaba MINGW64 /d/CodingRelated/Gym-Git-Exercise-Solutions (ft/contact-page)
+$  git push --set-upstream origin ft/contact-page
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 642 bytes | 642.00 KiB/s, done.
+Total 6 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/contact-page' on GitHub by visiting:
+remote:      https://github.com/emmanuel-niyonsaba/Gym-Git-Exercise-Solutions/pull/new/ft/contact-page
+remote:
+To https://github.com/emmanuel-niyonsaba/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/contact-page -> ft/contact-page
+branch 'ft/contact-page' set up to track 'origin/ft/contact-page'.
+
+user@EmmauelNiyonsaba MINGW64 /d/CodingRelated/Gym-Git-Exercise-Solutions (ft/contact-page)
+$ git checkout -b ft/faq-page
+Switched to a new branch 'ft/faq-page'
+
+user@EmmauelNiyonsaba MINGW64 /d/CodingRelated/Gym-Git-Exercise-Solutions (ft/faq-page)
+$ git add .
+
+user@EmmauelNiyonsaba MINGW64 /d/CodingRelated/Gym-Git-Exercise-Solutions (ft/faq-page)
+$ git commit -m"add faq-page"
+[ft/faq-page 4651a90] add faq-page
+ 1 file changed, 11 insertions(+)
+ create mode 100644 faq.html
+
+user@EmmauelNiyonsaba MINGW64 /d/CodingRelated/Gym-Git-Exercise-Solutions (ft/faq-page)
+$ git push
+fatal: The current branch ft/faq-page has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/faq-page
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+user@EmmauelNiyonsaba MINGW64 /d/CodingRelated/Gym-Git-Exercise-Solutions (ft/faq-page)
+$ git push --set-upstream origin ft/faq-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 432 bytes | 432.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/faq-page' on GitHub by visiting:
+remote:      https://github.com/emmanuel-niyonsaba/Gym-Git-Exercise-Solutions/pull/new/ft/faq-page
+remote:
+To https://github.com/emmanuel-niyonsaba/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/faq-page -> ft/faq-page
+branch 'ft/faq-page' set up to track 'origin/ft/faq-page'.
+
+user@EmmauelNiyonsaba MINGW64 /d/CodingRelated/Gym-Git-Exercise-Solutions (ft/faq-page)
+$ git revert <b7d16bca1611b00af6cda3ef08fd0ff44610a2a2>
+bash: syntax error near unexpected token `newline'
+
+user@EmmauelNiyonsaba MINGW64 /d/CodingRelated/Gym-Git-Exercise-Solutions (ft/faq-page)
+$ git revert b7d16bca1611b00af6cda3ef08fd0ff44610a2a2
+hint: Waiting for your editor to close the file... Vim: Error reading input, exiting...
+Vim: Finished.
+
+error: there was a problem with the editor 'vi'
+Please supply the message using either -m or -F option.
+
+user@EmmauelNiyonsaba MINGW64 /d/CodingRelated/Gym-Git-Exercise-Solutions (ft/faq-page)
+$ git add .
+
+user@EmmauelNiyonsaba MINGW64 /d/CodingRelated/Gym-Git-Exercise-Solutions (ft/faq-page)
+$ git commit -m"after revert"
+[ft/faq-page 31a8754] after revert
+ 1 file changed, 11 deletions(-)
+ delete mode 100644 team2.html
+
+user@EmmauelNiyonsaba MINGW64 /d/CodingRelated/Gym-Git-Exercise-Solutions (ft/faq-page)
+$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 232 bytes | 232.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/emmanuel-niyonsaba/Gym-Git-Exercise-Solutions.git
+   4651a90..31a8754  ft/faq-page -> ft/faq-page
